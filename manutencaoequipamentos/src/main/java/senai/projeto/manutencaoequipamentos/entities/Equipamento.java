@@ -17,10 +17,12 @@ import java.time.Instant;
 public class Equipamento {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String equipamento;
     private String imagem;
+
+    @Lob
     private String descricao;
     private Boolean ativo;
     private Instant data;

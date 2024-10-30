@@ -21,10 +21,10 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Data
 @EqualsAndHashCode(of = "id")
-public class Comenario {
+public class Comentario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String comentario;
 
